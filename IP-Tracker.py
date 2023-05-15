@@ -7,7 +7,7 @@
 #youtube: https://www.youtube.com/anonymouspro1
 #Facebook: https://m.facebook.com/anonymousproo1
 import os
-import urllib2
+import urllib.request as urllib2
 import json
 #For your own IP Coding
 url = "http://ip-api.com/json/"
@@ -29,18 +29,17 @@ print ('''
 ''')
 print("\033[1;33m==================================================================================================\033[1;33m")
 print   
-print	"\033[1;32mAuthor			:Mahfuzur Rahman\033[1;32m"
-print	"\033[1;32Github			:https://github.com/anonymousproo\033[1;32m"
-print	"\033[1;32mYouTube			:https://www.youtube.com/anonymouspro1			{IP Tracker v3.0}\033[1;32m"
-print	"\033[1;32mfacebook		:https://m.facebook.com/anonymousproo1\033[1;32m"
-print	"\033[1;32mcoded by		:ANONYMOUS PRO YTB\033[1;32m"
-print
-print"\033[1;33m==================================================================================================\033[1;33m"
+print(	"\033[1;32mAuthor			:Mahfuzur Rahman\033[1;32m")
+print(	"\033[1;32Github			:https://github.com/anonymousproo\033[1;32m")
+print(	"\033[1;32mYouTube			:https://www.youtube.com/anonymouspro1			{IP Tracker v3.0}\033[1;32m")
+print(	"\033[1;32mfacebook		:https://m.facebook.com/anonymousproo1\033[1;32m")
+print(	"\033[1;32mcoded by		:ANONYMOUS PRO YTB\033[1;32m")
+print("\033[1;33m==================================================================================================\033[1;33m")
 print ("\n\033[1;33mYour IP: \033[1;33m" + result1['query'])
 print ("\033[1;32mIf You Do Not Want To Track Type Exit\033[1;32m\n")
 
 while True:
-    ip = raw_input("\033[1;36mEnter Your Target IP: \033[1;36m")
+    ip = input("\033[1;36mEnter Your Target IP: \033[1;36m")
 
     if ip == 'exit':
         break
@@ -86,11 +85,11 @@ while True:
             print ("\033[1;36mZip: \033[1;36m" + result['zip'])
             print ("\033[1;33mTimeZone: \033[1;33m" + result1['timezone'])
             print ("\033[1;33misp: \033[1;33m" + result1['isp'])
-	    print ("Do you want to find the exact location with Google Maps?")
-	    print ("Then search the Google Map using the Latitude or longitude number")
-            print ("\033[1;36mLatitude: \033[1;36m" + lat)
-            print ("\033[1;36mlongitude: \033[1;36m" + long)
-            print ("\033[1;33mMore Information Of IP \033[1;33m:\n" + more)
-            print ("\n\n")
-        else:
-            print ("\n\033[1;31mSorry, Please Type The IP[" + ip + "] Please try again\033[1;31m\n")
+        print ("Do you want to find the exact location with Google Maps?")
+        print ("Then search the Google Map using the Latitude or longitude number")
+        print ("\033[1;36mLatitude: \033[1;36m" + lat)
+        print ("\033[1;36mlongitude: \033[1;36m" + long)
+        print ("\033[1;33mMore Information Of IP \033[1;33m:\n" + more)
+        print ("\n\n")
+else:
+    print ("\n\033[1;31mSorry, Please Type The IP[" + ip + "] Please try again\033[1;31m\n")
